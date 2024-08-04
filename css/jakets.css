@@ -1,0 +1,110 @@
+:root{
+    --yellow:#ffbf00
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+header{
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    
+}
+header ul li div {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+}
+header ul li div input{
+    width: 300px;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    height: 28px;
+    padding-left: 32px;
+    font-size: 20px;
+    
+}
+header ul li div label{
+    position: absolute;
+    left: 10px;
+    top: -2px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+    cursor: pointer;
+}
+footer{
+    border-top: 2px solid black;
+}
+.collection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/***** start product ******/
+.collection .title {
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.collection .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.collection .container .card{
+    width: 260px;
+    background-color: rgba(128, 128, 128, 0.096);
+    border-radius: 8px;
+    margin: 30px 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.644);
+    transition: all 0.5s;
+}
+.collection .container .card:hover{
+    transform: scale(1.1);
+}
+
+.collection .container .card img{
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+}
+.collection .container .card h2{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.collection .container .card p{
+    padding: 5px 10px;
+    font-weight: 700;
+}
+.collection .container .card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+.collection .container .card div p{
+    font-size: 20px;
+    font-weight: 700;
+    color: gold;
+}
+.collection .container .card div p:hover,
+.collection .container .card div button:hover{
+    transform: scale(1.2);
+}
+.collection .container .card div button{
+    height: 30px;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
+
